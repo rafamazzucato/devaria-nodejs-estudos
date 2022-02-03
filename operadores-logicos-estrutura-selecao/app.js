@@ -7,6 +7,7 @@ console.log('Esse programa vai checar se voce e maior de 18 anos e tem habilitac
 console.log('Alem da suas verificacoes, precisamos verificar se voce esta na lista de prensenca do horario');
 
 readLine.question('Qual o ano do seu nascimento?', ano => {
+
     if(ano > 2004){
         console.log('Voce nao tem 18 anos');
     }else{
@@ -16,10 +17,10 @@ readLine.question('Qual o ano do seu nascimento?', ano => {
             }else{
                 readLine.question("Qual seu nome?", nome =>{
                     switch(nome){
-                        case 'Douglas' :
+                        case 'Douglas':
                             console.log('bem vindo ao Kart Douglas');
                             break;
-                        case 'Rafael' :
+                        case 'Rafael':
                             console.log('bem vindo ao Kart Rafael');
                             break;
                         default:
