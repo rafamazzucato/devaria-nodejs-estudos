@@ -3,7 +3,7 @@ const readLine = require('readline').createInterface({
     output : process.stdout
 });
 
-const validarNumeroInformado = (numero) => {
+const validarNumeroInformado = numero => {
         const resultado = Number.parseFloat(numero);
         if(!resultado){
             console.log(`numero informado nao e valido`);
@@ -25,7 +25,7 @@ const validarOperador = (operador) => {
     }
 }
 
-readLine.question('Favor informar um numero:', (numero1) => {
+readLine.question('Favor informar um numero:', numero1 => {
     const numeroValidado1 = validarNumeroInformado(numero1);
 
     if(numeroValidado1){
